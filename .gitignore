@@ -1,0 +1,9 @@
+# Build directories
+build/
+cmake-build-*/
+
+# Object files
+*.o
+
+# Executable
+huffman
