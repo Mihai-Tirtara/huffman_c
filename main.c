@@ -10,7 +10,7 @@ int main(void) {
 
     printf("Enter file path: ");
     if (fgets(filePath, sizeof(filePath), stdin) == NULL) {
-        perror("Error reading file pathC");
+        perror("Error reading file path");
         return 1;
     }
 
