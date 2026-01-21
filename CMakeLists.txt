@@ -6,4 +6,6 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(huffman main.c
         file_encoding_operations.c
-        file_encoding_operations.h)
+        file_encoding_operations.h
+        HuffmanNode.c
+        HuffmanNode.h)
