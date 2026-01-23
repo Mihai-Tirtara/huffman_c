@@ -19,5 +19,7 @@
      */
     void print_huffman_tree(HuffmanNode* root, int indent);
 
+    int compare_huffman_nodes(void* a, void* b);
+
     #endif //HUFFMAN_NODE_H
 

@@ -46,6 +46,12 @@
 
         print_huffman_tree(root->zero,indent);
         
-    } 
+    }
 
+int compare_huffman_nodes(void* a, void* b) {
+    const HuffmanNode* nodeA = a;
+    const HuffmanNode* nodeB = b;
+
+    return nodeB->count - nodeA->count;
+}
     
