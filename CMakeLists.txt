@@ -8,4 +8,6 @@ add_executable(huffman main.c
         file_encoding_operations.c
         file_encoding_operations.h
         HuffmanNode.c
-        HuffmanNode.h)
+        HuffmanNode.h
+        PriorityQueue.h
+        PriorityQueue.c)
