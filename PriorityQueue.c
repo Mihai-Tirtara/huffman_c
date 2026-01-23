@@ -71,3 +71,7 @@ void* extract(PriorityQueue* priority_queue, void** out_element) {
     *out_element = top_element;
     return top_element;
 }
+void free_pq(PriorityQueue* priority_queue) {
+    free(priority_queue->array);
+    free(priority_queue);
+}

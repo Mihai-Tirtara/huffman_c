@@ -25,6 +25,8 @@ int main(void) {
     CharFreq* char_freq = count_char_frequencies(file);
     print_character_freq(char_freq);
     fclose(file);
+    HuffmanNode* root = build_huffman_tree(char_freq);
+    print_huffman_tree(root,0);
     free(char_freq);
     return 0;
 }

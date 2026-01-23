@@ -7,12 +7,17 @@
 
 #include <stdio.h>
 
+#include "HuffmanNode.h"
+
 typedef struct {
     int character;
     int frequency;
 } CharFreq;
 
 CharFreq *count_char_frequencies(FILE *file);
+
 void print_character_freq(CharFreq *char_freq);
+
+HuffmanNode* build_huffman_tree(CharFreq *char_freq);
 
 #endif //HUFFMAN_FILE_ENCODING_OPERATIONS_H
